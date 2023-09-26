@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Survey form" />
+  <title>Survey form</title>
+  <link rel="stylesheet" href="styles.css" />
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">
+      Thank you for taking the time to help us improve the platform
+    </p>
+
+    <form id="survey-form">
+      <fieldset>
+        <div class="info">
+          <label for="name" id="name-label">Name:</label>
+          <input id="name" placeholder="type name here" type="text" required />
+        </div>
+        <div class="info">
+          <label id="email-label" for="email">Email:</label>
+          <input
+            id="email"
+            placeholder="example@gmail.com "
+            type="email"
+            required
+          />
+        </div>
+        <div class="info">
+          <label for="number" id="number-label">A g e :</label>
+          <input
+            id="number"
+            placeholder="13"
+            type="number"
+            min="13"
+            max="120"
+          />
+        </div>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown"
+          >Which option best describes your current role?</label
+        >
+        <select id="dropdown">
+          <option value="">Select current role</option>
+          <option>Student</option>
+          <option>Fulltime Job</option>
+          <option>Other</option>
+        </select>
+      </fieldset>
+      <p>Will you recommend this site?</p>
+      <label for="yes">yes</label>
+      <input type="radio" id="yes" name="recommend" value="yes" />
+
+      <label for="no">no</label>
+      <input type="radio" id="no" name="recommend" value="no" />
+
+      <p>What areas are of your interest?</p>
+
+      <input type="checkbox" id="c1" name="1" value="Datamining" />
+      <label for="c1">Datamining</label><br />
+      <input type="checkbox" id="c2" name="c2" value="Web Development" />
+
+      <label for="c2"> Web Development</label><br />
+      <input type="checkbox" id="c3" name="c3" value="AI" />
+      <label for="c3">Artificiall Intelligence</label><br />
+
+      <p>Any other areas of interest?</p>
+      <textarea placeholder="Enter your comment here..."></textarea>
+      <button id="submit" type="submit">Send</button>
+    </form>
+  </body>
+</html>
